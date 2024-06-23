@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta here -->
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <title>RICE FARM</title>
+</head>
+
+<body>
+  <!--Navbar-->
+  <section id="nav">
+    <nav class="bg-green-600 fixed-top scroll-behavior: smooth;">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img
+            src="data:image/jpeg;base64,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"
+            class="h-8" alt="Flowbite Logo" />
+          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Rice Farm</span>
+        </a>
+        <button data-collapse-toggle="navbar-solid-bg" type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-solid-bg" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
+          <ul
+            class="flex flex-col font-medium mt-4 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
+            <li>
+              <a href="index.html"
+                class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-100 dark:text-white   dark:hover:text-white md:dark:hover:bg-transparent"
+                aria-current="page">Home</a>
+            </li>
+            <li>
+              <a href="index1.html"
+                class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-100 dark:text-white   dark:hover:text-white md:dark:hover:bg-transparent">What
+                we do</a>
+            </li>
+            <a href="index.html"
+              class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-100 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Our
+              Impact</a>
+            </li>
+            </li>
+            <a href="https://ricetoday.irri.org/"
+              class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-100 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Rice
+              Today</a>
+            </li>
+            <li>
+              <a href="index.html"
+                class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-100 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+            </li>
+            <li>
+              <a href="index.html"
+                class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-100 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About
+                us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+  <button type="button" class=" mt-2 flex items-center justify-center w-1/2 px-5 py-2 text-sm text-gray-700 transition-colors duration-200 bg-white border rounded-lg gap-x-2 sm:w-auto dark:hover:bg-gray-800 dark:bg-gray-900 hover:bg-gray-100 dark:text-gray-200 dark:border-gray-700">
+    <svg class="w-5 h-5 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
+    </svg>
+    <a href="index.html"><span>Go back</span></a>
+</button>
+
+    <section id="What we do">
+        <div class="bg-gray-700 p-3 min-h-auto p-3 mt-2">
+          <div class="max-w-7x1 mx-auto h-max px-2 md:px-12 xl:px-3">
+            <div class="md:w-2/3 lg:w-1/2">
+    
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-gray-100">
+                <path fill-rule="evenodd"
+                  d="M9 4.5a.75.75 0 01.721.544l.813 2.846a3.75 3.75 0 002.576 2.576l2.846.813a.75.75 0 010 1.442l-2.846.813a3.75 3.75 0 00-2.576 2.576l-.813 2.846a.75.75 0 01-1.442 0l-.813-2.846a3.75 3.75 0 00-2.576-2.576l-2.846-.813a.75.75 0 010-1.442l2.846-.813A3.75 3.75 0 007.466 7.89l.813-2.846A.75.75 0 019 4.5zM18 1.5a.75.75 0 01.728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 010 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 01-1.456 0l-.258-1.036a2.625 2.625 0 00-1.91-1.91l-1.036-.258a.75.75 0 010-1.456l1.036-.258a2.625 2.625 0 001.91-1.91l.258-1.036A.75.75 0 0118 1.5zM16.5 15a.75.75 0 01.712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 010 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 01-1.422 0l-.395-1.183a1.5 1.5 0 00-.948-.948l-1.183-.395a.75.75 0 010-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0116.5 15z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <h2 class="my-8 text-2xl font-bold text-white md:text-4xl">What we do?</h2>
+              <p class="text-gray-300">We are addressing five impact challenges faced by farmers, consumers, and
+                stakeholders, in the world’s rice-producing countries.</p>
+            </div>
+            <div
+              class="mt-8 grid divide-x divide-y  divide-gray-700 overflow-hidden rounded-3xl border text-gray-600 border-gray-700 sm:grid-cols-2 lg:grid-cols-4  lg:divide-y-0 xl:grid-cols-4">
+              <div class="group relative bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+                <div class="relative space-y-8 py-12 p-8">
+                  <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                    stroke-linejoin="round" color="white" style="color:white" height="50" width="50"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M19.875 6.27a2.225 2.225 0 0 1 1.125 1.948v7.284c0 .809 -.443 1.555 -1.158 1.948l-6.75 4.27a2.269 2.269 0 0 1 -2.184 0l-6.75 -4.27a2.225 2.225 0 0 1 -1.158 -1.948v-7.285c0 -.809 .443 -1.554 1.158 -1.947l6.75 -3.98a2.33 2.33 0 0 1 2.25 0l6.75 3.98h-.033z">
+                    </path>
+                    <path d="M10 10l2 -2v8"></path>
+                  </svg>
+                  <div class="space-y-2">
+                    <h5 class="text-xl font-semibold text-white transition">Climate Change & Sustainability</h5>
+                    <p class="text-gray-300">Rice farms face mounting challenges from climate change, including increased
+                      flooding, droughts, and pest outbreaks. Sustainable practices like crop rotation, organic farming, and
+                      water conservation are crucial for resilience</p>
+                  </div>
+                </div>
+              </div>
+              <div class="group relative bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+                <div class="relative space-y-8 py-12 p-8">
+                  <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                    stroke-linejoin="round" color="white" style="color:white" height="50" width="50"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M19.875 6.27a2.225 2.225 0 0 1 1.125 1.948v7.284c0 .809 -.443 1.555 -1.158 1.948l-6.75 4.27a2.269 2.269 0 0 1 -2.184 0l-6.75 -4.27a2.225 2.225 0 0 1 -1.158 -1.948v-7.285c0 -.809 .443 -1.554 1.158 -1.947l6.75 -3.98a2.33 2.33 0 0 1 2.25 0l6.75 3.98h-.033z">
+                    </path>
+                    <path d="M10 8h3a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-2a1 1 0 0 0 -1 1v2a1 1 0 0 0 1 1h3"></path>
+                  </svg>
+                  <div class="space-y-2">
+                    <h5 class="text-xl font-semibold text-white transition group-hover:text-secondary">Nutrition and Food
+                      Security</h5>
+                    <p class="text-gray-300">"Rice farms play a vital role in ensuring global nutrition and food security,
+                      providing essential carbohydrates, vitamins, and minerals, and supporting local communities' health
+                      and well-being."</p>
+                  </div>
+                </div>
+              </div>
+              <div class="group relative bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+                <div class="relative space-y-8 py-12 p-8">
+                  <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                    stroke-linejoin="round" color="white" style="color:white" height="50" width="50"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M19.875 6.27a2.225 2.225 0 0 1 1.125 1.948v7.284c0 .809 -.443 1.555 -1.158 1.948l-6.75 4.27a2.269 2.269 0 0 1 -2.184 0l-6.75 -4.27a2.225 2.225 0 0 1 -1.158 -1.948v-7.285c0 -.809 .443 -1.554 1.158 -1.947l6.75 -3.98a2.33 2.33 0 0 1 2.25 0l6.75 3.98h-.033z">
+                    </path>
+                    <path
+                      d="M10 9a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-2h2a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1">
+                    </path>
+                  </svg>
+                  <div class="space-y-2">
+                    <h5 class="text-xl font-semibold text-white transition group-hover:text-secondary">Environtment</h5>
+                    <p class="text-gray-300">Rice farm environments feature lush green fields, gentle slopes, and tranquil
+                      waterways, with a mix of native and introduced plant species, and a diverse array of wildlife</p>
+                  </div>
+                </div>
+              </div>
+              <div class="group relative bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+                <div class="relative space-y-8 py-12 p-8">
+                  <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                    stroke-linejoin="round" color="white" style="color:white" height="50" width="50"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M19.875 6.27a2.225 2.225 0 0 1 1.125 1.948v7.284c0 .809 -.443 1.555 -1.158 1.948l-6.75 4.27a2.269 2.269 0 0 1 -2.184 0l-6.75 -4.27a2.225 2.225 0 0 1 -1.158 -1.948v-7.285c0 -.809 .443 -1.554 1.158 -1.947l6.75 -3.98a2.33 2.33 0 0 1 2.25 0l6.75 3.98h-.033z">
+                    </path>
+                    <path d="M10 8v3a1 1 0 0 0 1 1h3"></path>
+                    <path d="M14 8v8"></path>
+                  </svg>
+                  <div class="space-y-2">
+                    <h5 class="text-xl font-semibold text-white transition group-hover:text-secondary">Prosperity
+                    </h5>
+                    <p class="text-gray-300">Rice farm prosperity thrives with sustainable practices, efficient irrigation,
+                      and community engagement, yielding bountiful harvests and economic growth for rural communities.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+      </section>
+
+
+
+
+<!--footer-->
+<section id="Contacts">
+    <footer class=" bg-green-600">
+      <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-3">
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-1" />
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <span class="text-sm text-gray-900 sm:text-center dark:text-gray-100">© 2010 <a href="#"
+              class="hover:underline">Mark Glenly Cabagbag</a>. All Rights Reserved.
+          </span>
+          <div class="flex mt-4 sm:justify-center sm:mt-0">
+            <a href="#" class="text-gray-900 hover:text-gray-900 dark:hover:text-white">
+              <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                viewBox="0 0 8 19">r
+                <path fill-rule="evenodd"
+                  d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <span class="sr-only">Facebook page</span>
+            </a>
+            <a href="#" class="text-gray-900 hover:text-gray-900 dark:hover:text-white ms-5">
+              <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <span class="sr-only">GitHub account</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    </section>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</html>
